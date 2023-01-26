@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>{{ title }} - Event List </title>
+</head>
+<header>
+    <h1> Event </h1>
+</header>
+
+<body>
+
+    </form>
+    {% for event in events %}
+    <div>
+        <p>
+            {{ event.date }} {{ event.name_of_event }} {{ number_of_guests }} {{ room_location }} {{ description }}
+        </p>
+    </div>
+    {% endfor %}
+
+</body>
